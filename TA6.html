@@ -1,0 +1,30 @@
+<!-- En un nuevo documento HTML, crear un formulario de encuesta con opciones de selección múltiple y botones de radio, 
+ utilizando para ello el tag <select> y el tipo de <input> correspondiente.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TA6</title>
+</head>
+<body>
+    <form action="">
+        <label for="options">Seleccioná una o más opciones:</label>
+        
+        <select id="options" name="options" multiple>
+            <option value="option1">Opción 1</option>
+            <option value="option2">Opción 2</option>
+            <option value="option3">Opción 3</option>
+        </select>
+    
+        <input type="radio" id="si" name="respuesta" value="si">
+        <label for="si">Si</label>
+
+        <input type="radio" id="no" name="respuesta" value="no">
+        <label for="no">No</label>  
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
