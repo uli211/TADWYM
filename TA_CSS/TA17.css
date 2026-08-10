@@ -1,0 +1,45 @@
+/* 
+Objetivo: Crear una tarjeta de perfil centrada en la página utilizando diferentes técnicas de posicionamiento en CSS.
+Instrucciones:
+1.	Estructura HTML:
+o	Crea una tarjeta de perfil (div) que contenga los siguientes elementos:
+	Una imagen (img) que represente el avatar de la persona.
+	Un título (h2) con el nombre de la persona.
+	Un párrafo (p) con una breve descripción o biografía.
+	Un botón (button) para seguir o contactar a la persona.
+2.	Estilo para la Tarjeta:
+o	La tarjeta debe estar centrada tanto vertical como horizontalmente en la página.
+o	Debe tener un ancho fijo de 300px y un relleno (padding) de 20px.
+o	Redondea las esquinas de la tarjeta utilizando border-radius.
+3.	Posicionamiento del Avatar:
+o	El avatar debe estar absolutamente posicionado en la esquina superior izquierda de la tarjeta, parcialmente superpuesto con el borde superior de la tarjeta.
+o	Aplica un borde circular al avatar utilizando border-radius: 50%.
+4.	Centrado del Contenido:
+o	El nombre, descripción y botón deben estar centrados horizontalmente dentro de la tarjeta.
+o	Usa text-align: center para centrar el texto.
+
+*/
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body > div {
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+body > div > div.img {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  border-radius: 50%;
+}
+
+h2, p, button {
+  text-align: center;
+}
