@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TA8</title>
+  <script src="TA8.js" defer></script>
+</head>
+<body>
+  <h1>TA8</h1>
+  <form id="formTA8">
+    <label for="people">Personas en formato JSON:</label>
+    <textarea id="people" rows="14" cols="50">[
+  {
+    "name": "Carly",
+    "yearOfBirth": 1942,
+    "yearOfDeath": 1970
+  },
+  {
+    "name": "Ray",
+    "yearOfBirth": 1962,
+    "yearOfDeath": 2011
+  },
+  {
+    "name": "Jane",
+    "yearOfBirth": 1912,
+    "yearOfDeath": 1941
+  }
+]</textarea>
+
+    <button type="submit">Buscar persona mayor</button>
+  </form>
+  <pre id="resultado"></pre>
+</body>
+</html>
