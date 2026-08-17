@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TA7</title>
+  <script src="TA7.js" defer></script>
+</head>
+<body>
+  <h1>TA7</h1>
+  <form id="formTA7">
+    <label for="books">Libros en formato JSON:</label>
+    <textarea id="books" rows="10" cols="50">[
+  { "title": "Book", "author": "Name" },
+  { "title": "Book2", "author": "Name2" },
+  { "title": "El principito", "author": "Antoine de Saint-Exupery" }
+]</textarea>
+
+    <button type="submit">Obtener titulos</button>
+  </form>
+  <pre id="resultado"></pre>
+</body>
+</html>
